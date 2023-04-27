@@ -63,7 +63,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         PopupCameraUtils.checkPopupCameraService(context);
         ThermalUtils.startService(context);
         RefreshUtils.startService(context);
-        FileUtils.enableService(context);
 
         boolean dcDimmingEnabled = sharedPrefs.getBoolean(DC_DIMMING_ENABLE_KEY, false);
         setDcDimmingStatus(dcDimmingEnabled);
